@@ -1,0 +1,92 @@
+/* Hecho: colores, box model, display, medidas, position, fuentes */
+/* Selector universal */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+}
+
+/* Encabezado */
+header {
+    position: sticky; /* Fija el encabezado en la parte superior */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    background-color: #EAF2EF; /* Color de fondo del encabezado */
+    padding: 15px; /* Espaciado interno */
+    display: flex; /* Uso de flexbox para alinear elementos */
+    justify-content: space-around; /* Espacia los elementos del encabezado */
+    align-items: center; /* Alinea verticalmente los elementos */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+
+/* Logo */
+.logo img {
+    width: 250px; /* Ajusta el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    vertical-align: middle; /* Alinea la imagen verticalmente */
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none; /* Elimina el estilo de lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    display:flex; /* Usa flexbox para el menú */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #521945; /* Color de los enlaces */
+    padding: 10px; /* Añade espaciado interno a los enlaces */
+}
+
+/* Iconos */
+.icons a {
+    margin-left: 15px; /* Espaciado entre iconos */
+}
+.icons a {
+    margin-left: 15px; /* Espaciado entre iconos */
+    color: #521945; /* Color de los iconos (puedes cambiarlo a lo que prefieras) */
+    font-size: 20px; /* Tamaño de los iconos, ajusta según necesites */
+}
+
+.icons a:hover {
+    color: #912F56; /* Color al pasar el cursor sobre los iconos */
+}
+
+/* Sección de Bienvenida */
+#Título {
+    text-align: center; /* Centra el texto */
+    color: #521945; /* Color del título */
+    margin-top: 50px; /* Espaciado superior */
+    font-size: 40px;
+}
+
+#Explicacion {
+    text-align: center; /* Centra el texto */
+    color: #361F27; /* Color del texto explicativo */
+    margin: 20px auto; /* Margen automático para centrar */
+    max-width: 800px; /* Ancho máximo */
+    font-size: 25px;
+}
+
+/* Contenedor del Botón */
+.contenedor-boton {
+    text-align: center; /* Centra el contenedor del botón */
+    margin-top: 30px; /* Espaciado superior */
+}
+
+/* Botón */
+.boton {
+    display: inline-block; /* Hace que el botón ocupe solo el ancho del contenido */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #912F56; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.boton:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el cursor */
+}
